@@ -1,0 +1,3 @@
+{
+    "database": { "global": "database/settings.json", "local": "database/settings.local.json" }
+}

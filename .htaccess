@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^$ vendor/Kernel/index.php [NC,L,E=VAR2:%{SCRIPT_FILENAME}]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . vendor/Kernel/index.php [E=VAR1:%{SCRIPT_FILENAME}]
